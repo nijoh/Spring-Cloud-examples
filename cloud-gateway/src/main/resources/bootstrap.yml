@@ -1,0 +1,15 @@
+server:
+  port: 8083
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        namespace: 785ac49a-4bfc-475b-a5da-3816c35f34fe
+        file-extension: yaml
+        prefix: gateway
+      discovery:
+        namespace: 785ac49a-4bfc-475b-a5da-3816c35f34fe
+        server-addr: 127.0.0.1:8848
+        group: DEFAULT_GROUPS
+        service: gateway-service
